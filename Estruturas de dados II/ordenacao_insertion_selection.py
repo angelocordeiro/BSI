@@ -2,20 +2,10 @@ import random
 
 def nomeAleatorio():             
   aleatorio = random.randint(0,4048)
-  entrada = open('trabalhopratico1/nomes-registrados-2017.csv','r', encoding = 'ISO-8859-1')
+  entrada = open('Estruturas de dados II/nomes-registrados-2017.csv','r', encoding = 'ISO-8859-1')
   entrada = entrada.readlines()
   linhaAleatoria = entrada[aleatorio - 1]
   return linhaAleatoria
-
-def criarPessoa():
-  
-  pessoa = {
-    "Nome": nomeAleatorio().replace('\n',''),
-    "Idade": random.randint(18,61),
-    "Estado": random.choice(estado)
-  }
-
-  return pessoa
 
 array = []
 
